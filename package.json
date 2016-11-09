@@ -1,0 +1,46 @@
+{
+  "name": "octo-drive",
+  "version": "0.1.1",
+  "description": "Turn your GitHub repository into encrypted filesystem (=",
+  "main": "index.js",
+  "bin" : {
+    "octo-drive" : "./index.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "npm run lint && npm run mocha",
+    "mocha": "mocha tests/",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linuxenko/octo-drive.git"
+  },
+  "author": "Svetlana Linuxenko <linuxenko@yahoo.com> (http://www.linuxenko.pro)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/linuxenko/octo-drive/issues"
+  },
+  "homepage": "https://github.com/linuxenko/octo-drive#readme",
+  "dependencies": {
+    "async": "^2.1.2",
+    "debouncy": "^1.0.7",
+    "encrypted-cache": "^1.0.0",
+    "fuse-bindings": "^2.10.1",
+    "octonode": "^0.7.6",
+    "readline-sync": "^1.4.5",
+    "request": "^2.78.0",
+    "tmp": "0.0.30"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.9.1",
+    "lodash": "^4.16.6",
+    "mocha": "^3.1.2"
+  }
+}
