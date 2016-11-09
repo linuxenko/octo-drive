@@ -50,7 +50,7 @@ and
   * `OCTODRIVE_SECRET`
 
 Idk how much it secure setup envs with plain passwords, but it can 
-be supersecret script insode of the supersecret place than run `octo-drive`
+be supersecret script inside of the supersecret place that run `octo-drive`
 with these variables.
 
 **Is it really secure ?**
