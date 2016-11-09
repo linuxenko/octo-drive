@@ -1,5 +1,7 @@
 ### OCTO-DRIVE 
 
+[![Build Status](https://travis-ci.org/linuxenko/octo-drive.svg?branch=master)](https://travis-ci.org/linuxenko/octo-drive)
+
 `octo-drive` helps you turn github repository into enctypted filesystem. It is 
 based on `fuse` (`fuse-bindings` for node) that helps create userspace filesystems.
 
