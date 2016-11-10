@@ -1,6 +1,6 @@
 ### OCTO-DRIVE 
 
-![npm version](https://img.shields.io/npm/v/octo-drive.svg)](https://www.npmjs.com/package/octo-drive) [![Build Status](https://travis-ci.org/linuxenko/octo-drive.svg?branch=master)](https://travis-ci.org/linuxenko/octo-drive)
+[![npm version](https://img.shields.io/npm/v/octo-drive.svg)](https://www.npmjs.com/package/octo-drive) [![Build Status](https://travis-ci.org/linuxenko/octo-drive.svg?branch=master)](https://travis-ci.org/linuxenko/octo-drive)
 
 `octo-drive` helps you turn github repository into enctypted filesystem. It is 
 based on `fuse` (`fuse-bindings` for node) that helps create userspace filesystems.
