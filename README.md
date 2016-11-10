@@ -1,5 +1,7 @@
 ### OCTO-DRIVE 
 
+[![Build Status](https://travis-ci.org/linuxenko/octo-drive.svg?branch=master)](https://travis-ci.org/linuxenko/octo-drive)
+
 `octo-drive` helps you turn github repository into enctypted filesystem. It is 
 based on `fuse` (`fuse-bindings` for node) that helps create userspace filesystems.
 
@@ -13,17 +15,19 @@ based on `fuse` (`fuse-bindings` for node) that helps create userspace filesyste
 
 ### Usage
 
+Dependency
+
+#### `sudo apt-get install libfuse-dev`
+
+`fuse-bindings` is depend on `libfuse-dev` when installing with `node-gyp`
+
 How to install ?
 
-```sh
-npm install -g octo-drive
-```
+#### `npm install -g octo-drive`
 
 How to run ?
 
-```sh
-  octo-drive githubuser/myrepository ~/drive
-```
+#### `octo-drive githubuser/myrepository ~/drive`
 
 Will mount repository `mysrepository` of `githubuser` into `~/drive`
 
@@ -41,14 +45,18 @@ with this `secret`.
 There is a bunch of `ENV`ironment variables that can help with it
 
   * `OCTODRIVE_TOKEN`
+  
 or
+
   * `OCTODRIVE_USER`
   * `OCTODRIVE_PASS`
+  
 and
+
   * `OCTODRIVE_SECRET`
 
 Idk how much it secure setup envs with plain passwords, but it can 
-be supersecret script insode of the supersecret place than run `octo-drive`
+be supersecret script inside of the supersecret place that run `octo-drive`
 with these variables.
 
 **Is it really secure ?**
