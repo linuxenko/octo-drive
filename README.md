@@ -1,4 +1,6 @@
-### OCTO-DRIVE 
+
+[![logo](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/octo-drive/octo-drive.png)](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/octo-drive/octo-drive.png)
+
 
 [![npm version](https://img.shields.io/npm/v/octo-drive.svg)](https://www.npmjs.com/package/octo-drive) [![Build Status](https://travis-ci.org/linuxenko/octo-drive.svg?branch=master)](https://travis-ci.org/linuxenko/octo-drive) [![dependencies Status](https://david-dm.org/linuxenko/octo-drive/status.svg)](https://david-dm.org/linuxenko/octo-drive) [![devDependencies Status](https://david-dm.org/linuxenko/octo-drive/dev-status.svg)](https://david-dm.org/linuxenko/octo-drive?type=dev) [![Dependency Status](https://dependencyci.com/github/linuxenko/octo-drive/badge)](https://dependencyci.com/github/linuxenko/octo-drive)
 
@@ -44,27 +46,18 @@ with this `secret`.
 
 There is a bunch of `ENV`ironment variables that can help with it
 
-  * `OCTODRIVE_TOKEN`
-  
+### `OCTODRIVE_TOKEN`
 or
-
-  * `OCTODRIVE_USER`
-  * `OCTODRIVE_PASS`
-  
+### `OCTODRIVE_USER`
+### `OCTODRIVE_PASS`
 and
-
-  * `OCTODRIVE_SECRET`
+### `OCTODRIVE_SECRET`
 
 Idk how much it secure setup envs with plain passwords, but it can 
 be supersecret script inside of the supersecret place that run `octo-drive`
 with these variables.
 
 ### Is it really secure ?
-
-Lets try
-
-[![Screen](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/screenshot/octo-drive-file.png)](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/screenshot/octo-drive-file.png)
-
 
 Huh ? Me ? I don't know, tell me please if you have something to say about it.
 
