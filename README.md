@@ -9,8 +9,8 @@ based on `fuse` (`fuse-bindings` for node) that helps create userspace filesyste
 
 ### Features
   * Encrypts every file with your password
-  * Encrypts filesystem metadata
-  * Enctypts filenames inside of repository
+  * Encrypt filesystem metadata
+  * Encrypt filenames inside of repository
   * Each file is encrypted repository file (reduce network things).
   * Encrypted local cache to make it a bit faster
   * Fast enough for download and upload
@@ -46,12 +46,12 @@ with this `secret`.
 
 There is a bunch of `ENV`ironment variables that can help with it
 
-### `OCTODRIVE_TOKEN`
+#### `export OCTODRIVE_TOKEN=...`
 or
-### `OCTODRIVE_USER`
-### `OCTODRIVE_PASS`
+#### `export OCTODRIVE_USER=...`
+#### `export OCTODRIVE_PASS=...`
 and
-### `OCTODRIVE_SECRET`
+#### `export OCTODRIVE_SECRET=...`
 
 Idk how much it secure setup envs with plain passwords, but it can 
 be supersecret script inside of the supersecret place that run `octo-drive`
