@@ -15,17 +15,19 @@ based on `fuse` (`fuse-bindings` for node) that helps create userspace filesyste
 
 ### Usage
 
+Dependency
+
+#### `sudo apt-get install libfuse-dev`
+
+`fuse-bindings` is depend on `libfuse-dev` when installing with `node-gyp`
+
 How to install ?
 
-```sh
-npm install -g octo-drive
-```
+#### `npm install -g octo-drive`
 
 How to run ?
 
-```sh
-  octo-drive githubuser/myrepository ~/drive
-```
+#### `octo-drive githubuser/myrepository ~/drive`
 
 Will mount repository `mysrepository` of `githubuser` into `~/drive`
 
@@ -43,10 +45,14 @@ with this `secret`.
 There is a bunch of `ENV`ironment variables that can help with it
 
   * `OCTODRIVE_TOKEN`
+  
 or
+
   * `OCTODRIVE_USER`
   * `OCTODRIVE_PASS`
+  
 and
+
   * `OCTODRIVE_SECRET`
 
 Idk how much it secure setup envs with plain passwords, but it can 
