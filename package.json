@@ -13,9 +13,10 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "npm run lint && npm run mocha",
+    "test": "npm run lint && npm run mocha && npm run fstest",
     "mocha": "mocha tests/",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "fstest": "sh tests/native/fs.spec.sh"
   },
   "repository": {
     "type": "git",
