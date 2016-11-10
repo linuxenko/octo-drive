@@ -1,6 +1,6 @@
 {
   "name": "octo-drive",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Turn your GitHub repository into encrypted filesystem (=",
   "main": "index.js",
   "bin" : {
