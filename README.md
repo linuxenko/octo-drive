@@ -40,7 +40,7 @@ When you run the `octo-drive`, it will ask some questions
 Then it will ask about `drive secret`, all the data will be encoded
 with this `secret`.
 
-**Ok , what about more automation ?**
+### Ok , what about more automation ?
 
 There is a bunch of `ENV`ironment variables that can help with it
 
@@ -59,7 +59,12 @@ Idk how much it secure setup envs with plain passwords, but it can
 be supersecret script inside of the supersecret place that run `octo-drive`
 with these variables.
 
-**Is it really secure ?**
+### Is it really secure ?
+
+Lets try
+
+[![Screen](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/screenshot/octo-drive-file.png)](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/screenshot/octo-drive-file.png)
+
 
 Huh ? Me ? I don't know, tell me please if you have something to say about it.
 
