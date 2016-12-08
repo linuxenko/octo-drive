@@ -52,6 +52,7 @@ or
 #### `export OCTODRIVE_PASS=...`
 and
 #### `export OCTODRIVE_SECRET=...`
+#### `export OCTODRIVE_BRANCH=...`
 
 Idk how much it secure setup envs with plain passwords, but it can 
 be supersecret script inside of the supersecret place that run `octo-drive`
@@ -64,6 +65,13 @@ Huh ? Me ? I don't know, tell me please if you have something to say about it.
 ### Bugz..z.. Features !
 
 `octo-drive` can handle different filesystems for just different secrets ;)
+
+### Changelog
+
+**0.3.3**
+
+  * `OCTODRIVE_BRANCH` env support (does not log drive activity)
+
 
 ### License
 
