@@ -2,7 +2,7 @@
 [![logo](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/octo-drive/octo-drive.png)](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/octo-drive/octo-drive.png)
 
 
-[![Donate](https://img.shields.io/badge/donate-3$-green.svg)](https://www.linuxenko.pro/donate.html#?amount=3) [![npm version](https://img.shields.io/npm/v/octo-drive.svg)](https://www.npmjs.com/package/octo-drive) [![Build Status](https://travis-ci.org/linuxenko/octo-drive.svg?branch=master)](https://travis-ci.org/linuxenko/octo-drive)  [![Dependency Status](https://dependencyci.com/github/linuxenko/octo-drive/badge)](https://dependencyci.com/github/linuxenko/octo-drive)
+[![npm version](https://img.shields.io/npm/v/octo-drive.svg)](https://www.npmjs.com/package/octo-drive) [![Build Status](https://travis-ci.org/linuxenko/octo-drive.svg?branch=master)](https://travis-ci.org/linuxenko/octo-drive)  [![Dependency Status](https://dependencyci.com/github/linuxenko/octo-drive/badge)](https://dependencyci.com/github/linuxenko/octo-drive)
 
 `octo-drive` helps you turn github repository into enctypted filesystem. It is 
 based on `fuse` (`fuse-bindings` for node) that helps create userspace filesystems.
