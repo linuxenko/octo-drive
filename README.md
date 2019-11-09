@@ -1,7 +1,9 @@
+[![npm version](https://img.shields.io/npm/v/octo-drive.svg?style=flat-square)](https://www.npmjs.com/package/octo-drive) [![Build Status](https://img.shields.io/travis/linuxenko/octo-drive?style=flat-square)](https://travis-ci.org/linuxenko/octo-drive)
+
+<br>
+
 [![logo](media/octo-drive-logo.png)](https://github.com/linuxenko/octo-drive)
 
-
-[![npm version](https://img.shields.io/npm/v/octo-drive.svg)](https://www.npmjs.com/package/octo-drive) [![Build Status](https://travis-ci.org/linuxenko/octo-drive.svg?branch=master)](https://travis-ci.org/linuxenko/octo-drive)
 
 `octo-drive` helps you turn github repository into enctypted filesystem.
 
