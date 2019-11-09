@@ -1,10 +1,10 @@
 {
   "name": "octo-drive",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Turn your GitHub repository into encrypted filesystem (=",
   "main": "index.js",
-  "bin" : {
-    "octo-drive" : "./index.js"
+  "bin": {
+    "octo-drive": "./index.js"
   },
   "files": [
     "bin",
@@ -33,15 +33,15 @@
     "debouncy": "^1.0.7",
     "encrypted-cache": "^1.0.0",
     "fuse-bindings": "^2.10.1",
-    "octonode": "^0.7.6",
+    "octonode": "^0.9.5",
     "readline-sync": "^1.4.5",
     "request": "^2.78.0",
     "tmp": "0.0.30"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "^3.9.1",
+    "eslint": ">=4.18.2",
     "lodash": "^4.16.6",
-    "mocha": "^3.1.2"
+    "mocha": "^6.2.2"
   }
 }

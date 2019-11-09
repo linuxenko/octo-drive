@@ -72,7 +72,10 @@ I don't know, tell me please if you have something to say about it.
 
 ### Changelog
 
-**0.3.3**
+*0.3.4*
+  * Dependencies update
+
+*0.3.3*
 
   * `OCTODRIVE_BRANCH` env support (to avoid repository activity logging)
 
