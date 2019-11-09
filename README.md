@@ -1,66 +1,70 @@
+[![npm version](https://img.shields.io/npm/v/octo-drive.svg?style=flat-square)](https://www.npmjs.com/package/octo-drive) [![Build Status](https://img.shields.io/travis/linuxenko/octo-drive?style=flat-square)](https://travis-ci.org/linuxenko/octo-drive)
 
-[![logo](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/octo-drive/octo-drive.png)](https://raw.githubusercontent.com/linuxenko/linuxenko.github.io/master/media/octo-drive/octo-drive.png)
+<br>
+
+[![logo](media/octo-drive-logo.png)](https://github.com/linuxenko/octo-drive)
 
 
-[![npm version](https://img.shields.io/npm/v/octo-drive.svg)](https://www.npmjs.com/package/octo-drive) [![Build Status](https://travis-ci.org/linuxenko/octo-drive.svg?branch=master)](https://travis-ci.org/linuxenko/octo-drive)  [![Dependency Status](https://dependencyci.com/github/linuxenko/octo-drive/badge)](https://dependencyci.com/github/linuxenko/octo-drive)
-
-`octo-drive` helps you turn github repository into enctypted filesystem. It is 
-based on `fuse` (`fuse-bindings` for node) that helps create userspace filesystems.
+`octo-drive` helps you turn github repository into enctypted filesystem.
 
 ### Features
+
   * Encrypts every file with your password
-  * Encrypt filesystem metadata
-  * Encrypt filenames inside of repository
-  * Each file is encrypted repository file (reduce network things).
-  * Encrypted local cache to make it a bit faster
-  * Fast enough for download and upload
+  * Encrypts filesystem metadata
+  * Encrypts filenames inside of repository
+  * Each file is encrypted repository file (reduce network requests)
+  * Uses encrypted local cache to make it a bit faster
+  * Fast enough for both, download and upload
 
 ### Usage
 
-Dependency
+Dependencies install:
 
-#### `sudo apt-get install libfuse-dev`
+```
+sudo apt-get install libfuse-dev
+```
 
-`fuse-bindings` is depend on `libfuse-dev` when installing with `node-gyp`
+How `octo-drive` itself ?
 
-How to install ?
+```
+npm install -g octo-drive
+```
 
-#### `npm install -g octo-drive`
+How to use ?
 
-How to run ?
+```
+octo-drive githubuser/myrepository ~/drive
+```
 
-#### `octo-drive githubuser/myrepository ~/drive`
+It will mount repository `mysrepository` of `githubuser` into `~/drive`
 
-Will mount repository `mysrepository` of `githubuser` into `~/drive`
+After this, it may ask some questions, such as:
 
-When you run the `octo-drive`, it will ask some questions
+  * Do you want to authorize using github token ?
+  * Or you would like to use user/password for your account ?
 
-  * Do you like authorize with github token ?
-  * Token themselfs
-  * or user password for your account
+Then it asks for `drive secret`, all the data will be encoded
+using this `secret`.
 
-Then it will ask about `drive secret`, all the data will be encoded
-with this `secret`.
+### Environment variables
 
-### Ok , what about more automation ?
+There is a couple of `ENV`ironment variables you may use to avoid
+typing your secrets every time you want to mount the filesystem:
 
-There is a bunch of `ENV`ironment variables that can help with it
-
-#### `export OCTODRIVE_TOKEN=...`
+`export OCTODRIVE_TOKEN=...`
 or
-#### `export OCTODRIVE_USER=...`
-#### `export OCTODRIVE_PASS=...`
+`export OCTODRIVE_USER=...`
+`export OCTODRIVE_PASS=...`
 and
-#### `export OCTODRIVE_SECRET=...`
-#### `export OCTODRIVE_BRANCH=...`
+`export OCTODRIVE_SECRET=...`
+`export OCTODRIVE_BRANCH=...`
 
-Idk how much it secure setup envs with plain passwords, but it can 
-be supersecret script inside of the supersecret place that run `octo-drive`
-with these variables.
+Please note that passwords and secrets are plaintext. The simplest way to hide
+them inside of a shell script on an encrypted, local filesystem.
 
 ### Is it really secure ?
 
-Huh ? Me ? I don't know, tell me please if you have something to say about it.
+I don't know, tell me please if you have something to say about it.
 
 ### Bugz..z.. Features !
 
@@ -68,9 +72,12 @@ Huh ? Me ? I don't know, tell me please if you have something to say about it.
 
 ### Changelog
 
-**0.3.3**
+*0.3.4*
+  * Dependencies update
 
-  * `OCTODRIVE_BRANCH` env support (does not log drive activity)
+*0.3.3*
+
+  * `OCTODRIVE_BRANCH` env support (to avoid repository activity logging)
 
 
 ### License
